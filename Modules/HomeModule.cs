@@ -17,7 +17,6 @@ namespace WordCount
         newCounter.CountRepeats();
         return View["results.cshtml", newCounter];
       };
-
     }
   }
 }
