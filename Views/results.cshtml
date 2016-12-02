@@ -11,13 +11,14 @@
     <h2>Your Results</h2>
     @if (@Model.Repeats == 0)
     {
-      <h4>The word '<span class="theword"> @Model.UserCheck </span>' does not occur in the string  '<span class="thestring"> @Model.UserString</span> '. </h4>
+      <h4>The word <span class="theword"><a href="http://www.wikipedia.org/wiki/@Model.UserCheck"> @Model.UserCheck </a></span>  does not occur in the string  <span class="thestring"> @Model.UserString</span> . </h4>
     }else if (@Model.Repeats == 1)
     {
-      <h4>The word '<span class="theword"> @Model.UserCheck </span>' occurs @Model.Repeats time in the string '<span class="thestring"> @Model.UserString</span> '.</h4>
+      <h4>The word '<span class="theword"><a href="http://www.wikipedia.org/wiki/@Model.UserCheck"> @Model.UserCheck </a> </span>' occurs @Model.Repeats time in the string '<span class="thestring"> @Model.UserString</span> '.</h4>
     }else
     {
-      <h4>The word '<span class="theword"> @Model.UserCheck </span>' occurs @Model.Repeats times in the string '<span class="thestring"> @Model.UserString</span> '.</h4>
+      <h4>The word '<span class="theword"><a href="http://www.wikipedia.org/wiki/@Model.UserCheck"> @Model.UserCheck </a></span>' occurs @Model.Repeats times in the string '<span class="thestring"> @Model.UserString</span> '.</h4>
     }
     <h5 class="links"><a href="/">Search Again</a></h5>
   </div>
+  

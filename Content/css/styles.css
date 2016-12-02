@@ -8,14 +8,12 @@
 input{
   margin-bottom: 5px;
 }
-.title{
-  text-align: center;
-}
+
 .result{
   margin-left: 10%;
   margin-right: 10%;
 }
-.result h2{
+.result h2, .content h4, .links, .title{
   text-align: center;
 }
 .theword, .thestring{
@@ -30,6 +28,5 @@ img{
   left: 40%
 }
 .links{
-  text-align: center;
   margin-top: 25px;
 }
