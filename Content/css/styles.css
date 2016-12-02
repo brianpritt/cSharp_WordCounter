@@ -1,0 +1,11 @@
+.content{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding:7px;
+}
+input{
+  margin-bottom: 5px;
+}
+.title{
+  text-align: center;
+}

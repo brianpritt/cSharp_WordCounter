@@ -4,14 +4,16 @@
 }
 
   <div class="container">
-    <div class="jumbotron">
+    <div class = "title">
       <h1>Word Count</h1>
     </div>
+    <div class="content">
       <h2>Lets count how many times a word occurs in a sentence</h2><br>
 
         <form action="/results" method="post">
-          <input type="text" name="string" placeholder="Enter a word, string, or sentence:">
-          <input type="text" name="word" placeholder="Enter a word to find:">
-          <button type="submit">SUBMIT</button>
+          <input type="text" name="string" placeholder="Enter a word, string, or sentence:" class="form-control">
+          <input type="text" name="word" placeholder="Enter a word to find:" class="form-control">
+          <button type="submit" class="btn btn-info">SUBMIT</button>
         </form>
+      </div>
     </div>
