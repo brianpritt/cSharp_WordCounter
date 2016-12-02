@@ -6,42 +6,50 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application takes two inputs: a string of words or sentence and a word to check against the sentence.  The application will will return the number of times the check word occurs in the sentence._
+
 ##_Program Specs:_
 #_This application will_
 * 1. Gather User input (consisting of one word and a check word), and see if they match, return "1" if true;
     input: "this" :"this"
     output: 1
+    This test will demonstrate if the program can match one word to one word, the simplest function of this application.
+
 * 2. Gather User input (consisting of a list of words or sentence and a check word), and see if there is a match, return "1" if true;
     input: "This is nice" : "this"
     output: 1
-  3. Gather User input (consisting of a list of words or sentence and a check word), and count how many matches there are , return the number of matches;
-      input: "This here, this is nice" : "this"
-      output: 2
+    This test will demonstrate if the program can pick one word out of a string of words that matches the check word.
+
+* 3. Gather User input (consisting of a list of words or sentence and a check word), and count how many matches there are , return the number of matches;
+    input: "This here, this is nice" : "this"
+    output: 2
+    This test will demonstrate if the program can count how many times a check word occurs in a sting of words.
 
 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+To run this application you must do the following
+* _Clone this repository_
+* _From terminal, navigate to project directory_
+* _Run >dnu restore_
+* _Run >dnx kestre_
+* _In your browser, navigate to localhost:5004 to view the application_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_At time of commit, there were no known bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_For support of bug reports contact
+Brian Pritt:_
+_http://github.com/brianpritt_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This application is written in C#, using the Nancy Framework, the Razor view engine, and basic html and css._
 
 ### License
 

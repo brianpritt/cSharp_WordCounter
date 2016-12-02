@@ -13,6 +13,9 @@ namespace WordCount.Objects
       this.UserString = userInputString;
       this.UserCheck = userInputCheck;
     }
-    public in
+    public int Counter()
+    {
+      string 
+    }
   }
 }
