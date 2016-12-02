@@ -12,6 +12,11 @@ namespace WordCount
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
+      Post["/results"] = _ => {
+        RepeatCounter newCounter = new RepeatCounter(Request.Form["string"], Request.Form["word"]);
+        newCounter.CountRepeats();
+        return View["results.cshtml", newCounter];
+      };
 
     }
   }
