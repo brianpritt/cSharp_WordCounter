@@ -31,5 +31,17 @@ namespace  WordCount
       //Assert
       Assert.Equal(true, theTest == 1);
     }
+    [Fact]
+    public void IsMatch_StringMatchMultiples_true()
+    {
+      //Arrange
+      string word = "this here, this is nice";
+      string checkWord = "this";
+      RepeatCounter newCounter = new RepeatCounter(word, checkWord);
+      //Act
+      int theTest = newCounter.CountRepeats();
+      //Assert
+      Assert.Equal(true, theTest == 2);
+    }
   }
 }
