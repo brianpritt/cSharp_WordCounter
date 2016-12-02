@@ -10,17 +10,17 @@ _This application takes two inputs: a string of words or sentence and a word to 
 
 ##_Program Specs:_
 #_This application will_
-* 1. Gather User input (consisting of one word and a check word), and see if they match, return "1" if true;
+* 1. Gather User input (consisting of one word and a check word), and see if they match, increment counter by one if true;
     input: "this" :"this"
     output: 1
     This test will demonstrate if the program can match one word to one word, the simplest function of this application.
 
-* 2. Gather User input (consisting of a list of words or sentence and a check word), and see if there is a match, return "1" if true;
+* 2. Gather User input (consisting of a list of words or sentence and a check word), and see if there is a match, increment counter by 1 if true;
     input: "This is nice" : "this"
     output: 1
     This test will demonstrate if the program can pick one word out of a string of words that matches the check word.
 
-* 3. Gather User input (consisting of a list of words or sentence and a check word), and count how many matches there are , return the number of matches;
+* 3. Gather User input (consisting of a list of words or sentence and a check word), and count how many matches there are , increment the counter by the number of matches;
     input: "This here, this is nice" : "this"
     output: 2
     This test will demonstrate if the program can count how many times a check word occurs in a sting of words.

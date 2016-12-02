@@ -15,9 +15,9 @@ namespace  WordCount
       string checkWord = "this";
       RepeatCounter newCounter = new RepeatCounter(word, checkWord);
       //Act
-      int theTest = newCounter.CountRepeats();
+      newCounter.CountRepeats();
       //Assert
-      Assert.Equal(true, theTest == 1);
+      Assert.Equal(true, newCounter.Repeats == 1);
     }
     [Fact]
     public void IsMatch_StringMatch_true()
@@ -27,9 +27,9 @@ namespace  WordCount
       string checkWord = "this";
       RepeatCounter newCounter = new RepeatCounter(word, checkWord);
       //Act
-      int theTest = newCounter.CountRepeats();
+      newCounter.CountRepeats();
       //Assert
-      Assert.Equal(true, theTest == 1);
+      Assert.Equal(true, newCounter.Repeats == 1);
     }
     [Fact]
     public void IsMatch_StringMatchMultiples_true()
@@ -39,9 +39,9 @@ namespace  WordCount
       string checkWord = "this";
       RepeatCounter newCounter = new RepeatCounter(word, checkWord);
       //Act
-      int theTest = newCounter.CountRepeats();
+      newCounter.CountRepeats();
       //Assert
-      Assert.Equal(true, theTest == 2);
+      Assert.Equal(true, newCounter.Repeats == 2);
     }
   }
 }

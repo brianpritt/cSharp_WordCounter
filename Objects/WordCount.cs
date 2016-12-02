@@ -15,7 +15,7 @@ namespace WordCount.Objects
       this.UserCheck = userInputCheck;
       this.Repeats = 0;
     }
-    public int CountRepeats()
+    public void CountRepeats()
     {
       string[] arrayUserString = this.UserString.Split();
       string checkWord = this.UserCheck;
@@ -28,8 +28,6 @@ namespace WordCount.Objects
         }
         loopVar ++;
     }
-      int returnValue = this.Repeats;
-      return returnValue;
     }
   }
 }
