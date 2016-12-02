@@ -18,11 +18,11 @@ namespace WordCount.Objects
     public void CountRepeats()
     {
       string[] arrayUserString = this.UserString.Split();
-      string checkWord = this.UserCheck;
+      string checkWord = this.UserCheck.ToLower();
       int loopVar = 0;
       foreach(string word in arrayUserString)
       {
-        if (arrayUserString[loopVar] == checkWord)
+        if (arrayUserString[loopVar].ToLower() == checkWord)
         {
           this.Repeats +=1;
         }
