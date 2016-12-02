@@ -19,7 +19,7 @@ namespace WordCount.Objects
     {
       string[] arrayUserString = this.UserString.Split();// splits user input into array of words
       string checkWord = this.UserCheck.ToLower();
-      List<string> punctList = new List<string>() {"!","@","#","$","%","^","&","*",",",".",".","`"};
+      List<string> punctList = new List<string>() {"!","@","#","$","%","^","&","*",",",".",".","`","=","+","<",">","_"};
       int loopVar = 0;
       foreach(string word in arrayUserString)//loops through array and compares each word to check word
       {

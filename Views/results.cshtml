@@ -6,9 +6,19 @@
   <div class="title">
     <h1>Word Search</h1>
   </div>
-  <div class="content">
-    <h2>Your Results</h2><br>
-    <h4>The word @Model.UserCheck occurs @Model.Repeats times.</h4>
 
-    <h5><a href="/">Search Again</a></h5><br>
+  <div class="content result">
+    <h2>Your Results</h2>
+    @if (@Model.Repeats == 0)
+    {
+      <h4>The word '<span class="theword"> @Model.UserCheck </span>' does not occur in the string  '<span class="thestring"> @Model.UserString</span> ' </h4>
+    }else if (@Model.Repeats == 1)
+    {
+      <h4>The word '<span class="theword"> @Model.UserCheck </span>' occurs @Model.Repeats time in the string '<span class="thestring"> @Model.UserString</span> '</h4>
+    }else
+    {
+    <h4>The word '<span class="theword"> @Model.UserCheck </span>' occurs @Model.Repeats times in the string '<span class="thestring"> @Model.UserString</span> '</h4>
+    }
+    <br>
+    <h5><a href="/">Search Again</a></h5>
   </div>

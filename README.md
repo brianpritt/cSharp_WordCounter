@@ -40,7 +40,7 @@ To run this application you must do the following
 * _Clone this repository_
 * _From terminal, navigate to project directory_
 * _Run >dnu restore_
-* _Run >dnx kestre_
+* _Run >dnx kestrel_
 * _In your browser, navigate to localhost:5004 to view the application_
 
 

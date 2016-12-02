@@ -2,10 +2,30 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   padding:7px;
+  margin: 4px;
+
 }
 input{
   margin-bottom: 5px;
 }
 .title{
   text-align: center;
+}
+.result{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.result h2{
+  text-align: center;
+}
+.theword, .thestring{
+  color: coral;
+}
+body{
+  background-color: cornsilk;
+}
+img{
+  position: relative;;
+  top: 50%;
+  left: 40%
 }
