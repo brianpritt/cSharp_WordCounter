@@ -17,12 +17,18 @@ namespace WordCount.Objects
     }
     public int CountRepeats()
     {
-      if (this.UserString == this.UserCheck)
+      string[] arrayUserString = this.UserString.Split();
+      string checkWord = this.UserCheck;
+      int loopVar = 0;
+      foreach(string word in arrayUserString)
       {
-        this.Repeats +=1;
-      }
+        if (arrayUserString[loopVar] == checkWord)
+        {
+          this.Repeats +=1;
+        }
+        loopVar ++;
+    }
       int returnValue = this.Repeats;
-      
       return returnValue;
     }
   }
